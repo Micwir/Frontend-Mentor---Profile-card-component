@@ -50,8 +50,8 @@ main {
     flex-direction: column;
     background-color: white;
     align-items: center;
-    width: 25%;
-    height: 43%;
+    width: 300px;
+    height: 380px;
     z-index: -2;
     border-radius: 20px;
     overflow: hidden;
