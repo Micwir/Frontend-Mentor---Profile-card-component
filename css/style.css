@@ -11,51 +11,26 @@ body {
     align-items: center;
     box-sizing: border-box;
     font-family: 'Kumbh Sans', sans-serif;
-}
-
-.background {
-    position: fixed;
-    top: 0;
-    left: 0;
     background-color: hsl(185, 75%, 39%);
-    width: 100vw;
-    height: 100vh;
-    z-index: -2;
-    margin: 0;
-}
-
-.background-circle-top {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 50%;
-    padding-right: 50%;
-    background-image: url("../images/bg-pattern-top.svg");
-    background-position: bottom right;
-}
-
-.background-circle-bottom {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    height: 50%;
-    padding-left: 50%;
-    background-image: url("../images/bg-pattern-top.svg");
-    background-position: top left;
+    background-image: url(../images/bg-pattern-top.svg), url(../images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: right 52vw bottom 35vh, left 48vw top 52vh;
+    overflow-y: hidden;
 }
 
 main {
-    position: relative;
     display: flex;
     flex-direction: column;
     background-color: white;
+    background-image: url(../images/bg-pattern-card.svg);
+    background-repeat: no-repeat;
     align-items: center;
     width: 300px;
     height: 380px;
-    z-index: -2;
     border-radius: 20px;
     overflow: hidden;
     min-width: 300px;
+    min-height: 380px;
 }
 
 main h2, 
@@ -71,14 +46,6 @@ main h2 {
 
 main h2 > strong {
     color: hsl(229, 23%, 23%);
-}
-
-.card-background {
-    position: absolute;
-    z-index: -1;
-    height: 33%;
-    width: 100%;
-    background-image: url(../images/bg-pattern-card.svg);
 }
 
 .overview {
